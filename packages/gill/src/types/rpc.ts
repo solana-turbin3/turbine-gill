@@ -24,7 +24,7 @@ export type ModifiedClusterUrl = DevnetUrl | GenericUrl | LocalnetUrl | MainnetU
 
 export type SolanaClientUrlOrMoniker = ModifiedClusterUrl | SolanaClusterMoniker | URL;
 
-export type Cluster = "devnet" | "localnet" | "mainnet" | "testnet";
+export type Cluster = "solana:devnet" | "solana:localnet" | "solana:mainnet" | "solana:testnet";
 
 export type CreateSolanaClientArgs<TClusterUrl extends SolanaClientUrlOrMoniker = GenericUrl> = {
     cluster: Cluster;

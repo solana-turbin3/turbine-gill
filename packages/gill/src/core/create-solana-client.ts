@@ -11,25 +11,25 @@ import { simulateTransactionFactory } from "./simulate-transaction";
  */
 export function createSolanaClient(
   props: Omit<CreateSolanaClientArgs<MainnetUrl | "mainnet">, "urlOrMoniker"> & {
-    cluster: "mainnet",
+    cluster: "solana:mainnet",
     urlOrMoniker: "mainnet";
   },
 ): SolanaClient<MainnetUrl>;
 export function createSolanaClient(
   props: Omit<CreateSolanaClientArgs<DevnetUrl | "devnet">, "urlOrMoniker"> & {
-    cluster: "devnet",
+    cluster: "solana:devnet",
     urlOrMoniker: "devnet";
   },
 ): SolanaClient<DevnetUrl>;
 export function createSolanaClient(
   props: Omit<CreateSolanaClientArgs<TestnetUrl | "testnet">, "urlOrMoniker"> & {
-    cluster: "testnet";
+    cluster: "solana:testnet";
     urlOrMoniker: "testnet";
   },
 ): SolanaClient<TestnetUrl>;
 export function createSolanaClient(
   props: Omit<CreateSolanaClientArgs<LocalnetUrl | "localnet">, "urlOrMoniker"> & {
-    cluster: "localnet";
+    cluster: "solana:localnet";
     urlOrMoniker: "localnet";
   },
 ): SolanaClient<LocalnetUrl>;

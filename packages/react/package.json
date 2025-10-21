@@ -87,7 +87,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "react": "^18",
-    "typescript": ">=5"
+    "typescript": ">=5",
+    "gill": "workspace:*"
   },
   "engines": {
     "node": ">=20.18.0"

@@ -21,7 +21,6 @@ export * from "./providers.js";
  * provide a cohesive developer experience
  */
 export {
-  useSignMessage,
   useWalletAccountMessageSigner,
   useWalletAccountTransactionSendingSigner,
   useWalletAccountTransactionSigner,

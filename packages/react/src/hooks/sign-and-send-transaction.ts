@@ -23,7 +23,7 @@ export function useSignAndSendTransaction(): UseSignAndSendTransactionReturn {
   const {cluster, rpc} = useSolanaClient();
 
   if(!account) throw new Error("Account is undefined")
-  const signer = useWalletAccountTransactionSigner(account, `solana:${cluster}`);
+  const signer = useWalletAccountTransactionSigner(account, cluster);
 
   const mutation = useMutation<Signature, Error, Transaction>({
     mutationFn: async (tx: Transaction): Promise<Signature> => {
